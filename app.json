@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/send/send",
+    "pages/search/search",
+    "pages/center/center",
+    "pages/setting/setting",
+    "pages/learn/learn",
+    "pages/learnDetail/learnDetail",
+    "pages/qingdan/qingdan",
+    "pages/qddetail/qddetail",
+    "pages/qd/qd",
+    "pages/qdmb/qdmb",
+    "pages/personal/personal",
+    "pages/xuetangreload/xuetangreload",
+    "pages/qdreload/qdreload",
+    "pages/qdreloadquery/qdreloadquery",
+    "pages/exchange/exchange",
+    "pages/about/about",
+    "pages/duihuang/duihuang",
+    "pages/pay/pay"
+    
+
+  ],
+  "window": {
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#14c145",
+    "navigationBarTitleText": "购物",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "主页",
+      "iconPath": "./img/home.png",
+      "selectedIconPath": "./img/shome.png"
+    },
+    {
+      "pagePath": "pages/send/send",
+      "text": "编辑",
+      "iconPath": "./img/edit.png",
+      "selectedIconPath": "./img/sedit.png"
+    },
+    {
+      "pagePath": "pages/learn/learn",
+      "text": "爱记学堂",
+      "iconPath": "./img/点赞 (1).png",
+      "selectedIconPath": "./img/点赞.png"
+    },
+    {
+      "pagePath": "pages/center/center",
+      "text": "我的",
+      "iconPath": "./img/center.png",
+      "selectedIconPath": "./img/scenter.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  }
+
+}
