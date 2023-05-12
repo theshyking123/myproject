@@ -1,0 +1,5 @@
+<view class="box"><text>主题:{{title}}</text></view>
+<view wx:for="{{datalist}}" wx:key="index">
+      <view class="box">{{item}}</view>
+    </view>
+    <button bindtap="handleTap">保存</button>

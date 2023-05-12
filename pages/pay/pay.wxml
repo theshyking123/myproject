@@ -1,0 +1,9 @@
+<view style="border: 1px solid red;">提示：下拉删除全部记录</view>
+<view class="box" wx:for="{{user}}" wx:key="index">
+  <view ><label style="float:right;">用户名:{{item.username}}</label>
+    <label>日期:{{item.date}}</label>
+  </view>
+  <view><label >支付金额:{{item.number}}</label>
+    
+  </view>
+</view>

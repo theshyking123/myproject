@@ -1,0 +1,20 @@
+<view class="box">
+  <view class="box_header {{iscolor1 ? 'active':'null'}}" bindtap="color1">已完成</view>
+  <view class="box_header {{iscolor2 ? 'active':'null'}}" bindtap="color2">未完成</view>
+
+</view>
+<button bindtap="addlist">新建</button>
+<checkbox-group  bindchange="checkboxChange">
+  <view wx:for="{{datalist}}" wx:key="index">
+    <view style="border: 1px solid red;height: 200rpx;display: flex;">
+    <view bindtap="delete" data-id="{{item._id}}" style="line-height:40px;border-right:1px solid red;">删除</view>
+    
+      <view data-id="{{item._id}}" bindtap="handTap" style="text-align: center;width: 700rpx;"><text style="line-height:88px ;">{{item.title}}</text>
+      </view>
+      <view style="line-height: 200rpx;">
+        <checkbox value="{{item._id}}" checked="{{a}}" />
+      </view>
+    </view>
+  </view>
+
+</checkbox-group>

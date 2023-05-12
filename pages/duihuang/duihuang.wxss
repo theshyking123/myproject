@@ -1,0 +1,18 @@
+text{
+  padding: 10px;
+}
+.box{
+padding: 10px;
+border-bottom: 2rpx solid rgba(160, 218, 228, 0.5);
+}
+.root{
+  display: flex;
+  padding: 5px;
+}
+input{
+  flex:1;
+  border: 1px solid black;
+  border-radius: 10rpx;
+  margin-right: 30rpx;
+  height: 30px;
+}

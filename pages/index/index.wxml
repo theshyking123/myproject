@@ -1,0 +1,13 @@
+<view class="box">
+<view style="font-size: larger; text-align: center;color: rgb(238, 225, 225);">
+爱记学习助手</view>
+  <view>
+  <form bindsubmit="submit">
+    <p>用户名：<input type="text" name="username" placeholder="输入用户名" /></p>
+    <p>手机号：<input type="number" name="tel" placeholder="填写真实的手机号"/></p>
+    <p>密码：<input type="safe-password" password="true" name="pwd" maxlength="16" placeholder="密码最长16位"/></p>
+    <button type="primary" size="default" plain="true" form-type="submit">注册</button>
+  </form>
+</view>
+<button type="primary" size="default" plain="true" bindtap="loop" data-tel="{{tel}}">跳转登录页</button>
+</view>

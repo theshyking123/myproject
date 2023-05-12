@@ -1,0 +1,9 @@
+<view style="border: 1px solid red;">提示：下拉删除全部记录</view>
+<view class="box" wx:for="{{user}}" wx:key="index">
+  <view ><label style="float:right;">用户名:{{item.username}}</label>
+    <label>当前积分:{{item.jifeng}}</label>
+  </view>
+  <view><label >当前流量:{{item.flow}}</label>
+    <label style="float:right;">兑换时间:{{item.year}}-{{item.mouth}}-{{item.date}}</label>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<!--pages/setting/setting.wxml-->
+<form bindsubmit="submit">
+<p>用户名：<input type="text" name="username"/></p>
+<p>密码：<input type="password" name="pwd"/></p>
+<button form-type="submit" type="primary">修改</button>
+</form>

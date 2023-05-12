@@ -1,0 +1,6 @@
+<!--pages/search/search.wxml-->
+<!-- <view class="root">
+<input type="text" placeholder="请输入搜索内容" bindinput="getKey"/>
+<view>搜素</view>
+</view> -->
+<mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>

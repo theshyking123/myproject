@@ -1,0 +1,10 @@
+<view><label>已经发布条数：</label>{{num}}</view>
+<view style="border: 1px solid red;">提示：下拉删除全部记录</view>
+<view class="box" wx:for="{{datalist}}" wx:key="index">
+  <view bindtap="handleTap" data-id="{{item.id}}">
+    <view class="box_toxiang">
+      <image src="{{item.toxiang}}" binderror="handleError"></image><text>{{item.title}}</text>
+    </view>
+    <view class="box_briet" style="height: 60px;"><text>{{item.brief}}</text></view>
+  </view>
+</view>

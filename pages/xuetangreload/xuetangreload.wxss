@@ -1,0 +1,17 @@
+/* pages/learn/learn.wxss */
+image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.box_toxiang image,text{
+  vertical-align: middle;
+}
+text{
+  padding: 10px;
+}
+.box{
+padding: 10px;
+height: 150rpx;
+border-bottom: 2rpx solid rgba(160, 218, 228, 0.5);
+}

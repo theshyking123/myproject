@@ -1,0 +1,32 @@
+<!--pages/center/center.wxml-->
+<view wx:if="{{!userinfo}}" class="login">
+  <form bindsubmit="submit">
+    <p>手机号：<input type="number" name="tel" /></p>
+    <p>密码：<input type="password" name="pwd" /></p>
+    <button type="primary" form-type="submit" bindtap="handleLogin">登录</button>
+  </form>
+</view>
+<view wx:else class="center">
+  <view class="toxiang">
+    <image src="../../img/秋天.png"></image>
+    <view><label>用户名：</label>{{userinfo.username}}</view>
+  </view>
+  <view class="box" style="display: flex;">
+    <view class="box_header" bindtap="handlesend">学堂记录</view>
+    <view class="box_header" bindtap="handleqd">清单记录</view>
+  </view>
+  <view class="box" bindtap="handleLoginOut">退出登录</view>
+  <view class="box" bindtap="handlePersonal">个人信息</view>
+  <view class="box" bindtap="handleAccount">修改账户信息</view>
+  <view class="box" bindtap="uplevel">升级为会员</view>
+  <view class="box" bindtap="aboutJifeng">积分兑换记录</view>
+  <view class="box" bindtap="payrecord">支付记录</view>
+  <view class="box" bindtap="about">关于积分、会员与金币说明</view>
+  <view class="box" style="background-color: rgb(238, 238, 243);"> <button open-type="contact">联系客服</button></view>
+</view>
+<view hidden="{{isMask}}" style="position: fixed;bottom: 0;background-color: rgb(248, 245, 245);z-index: 100;width:100%;height:  100%;">
+<view bindtap="back">返回</view>
+<view style="color: green; background-color: rgb(231, 238, 245); text-align: center;border-bottom: 1px solid rgb(194, 160, 160);height: 70rpx;" bindtap="wxpay">微信支付</view>
+<!-- <view style="background-color: rgb(243, 246, 248); text-align: center;" bindtap="jifengUp">积分支付</view> -->
+</view>
+

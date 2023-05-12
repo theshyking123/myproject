@@ -1,0 +1,4 @@
+<view wx:for="{{datalist}}" wx:key="index">
+  <view style="border: 1px solid red;height: 200rpx; text-align: center;" data-id="{{item._id}}" bindtap="handTap"><text style="line-height:88px ;">{{item.title}}</text></view>
+</view>
+<!-- <button bindtap="q222">1222</button> -->

@@ -1,0 +1,39 @@
+<!--pages/home/home.wxml-->
+<swiper indicator-dots="{{true}}" circular="{{true}}" autoplay="{{true}}" interval="{{3000}}">
+  <swiper-item wx:for="{{looplist}}" wx:key="index" mode="aspectFit">
+    <image src="{{item}}"></image>
+  </swiper-item>
+</swiper>
+
+<view class="box">
+  <view class="box_image" bindtap="xuetang">
+    <image src="../../img/彩虹.png"></image><text>爱记学堂</text>
+  </view>
+  <view class="box_image" bindtap="qingdang">
+    <image src="../../img/海上.png"></image><text>爱记清单</text>
+  </view>
+  <view class="box_image" bindtap="muban">
+    <image src="../../img/河流.png"></image><text>清单模板</text>
+  </view>
+  <view class="box_image">
+    <image src="../../img/落日.png" bindtap="share"></image><text>积分兑换</text>
+  </view>
+</view>
+<view style="line-height: 50px;">==================================</view>
+
+<label>热门发布</label>
+
+<view class="boxhot">
+  <view wx:for="{{datalist}}" wx:key="index" class="boxhot_contain">
+    <view bindtap="handleTap" data-id="{{item._id}}">
+      <view class="box_toxiang">
+        <image src="{{item.toxiang}}" style="width: 100rpx;height: 100rpx;border-radius: 50%;"></image><text>{{item.name}}</text>
+      </view>
+      <view style="height: 60px;overflow: hidden;">
+        <text>简介：{{item.brief}}</text>
+      </view>
+
+    </view>
+  </view>
+
+</view>

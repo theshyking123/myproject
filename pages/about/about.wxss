@@ -1,0 +1,6 @@
+text{
+ color: red; 
+}
+view{
+  font-size: larger;
+}

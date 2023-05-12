@@ -1,0 +1,6 @@
+<view>
+<label>使用积分兑换流量：兑换比例为10:1</label>
+</view>
+<view>
+<button bindtap="exchange">兑换</button>
+</view>

@@ -1,0 +1,34 @@
+<view>
+  <scroll-view scroll-y="true" style="height: 1000px;">
+    <form bindsubmit="submit">
+      <view box_img><text>图片</text>
+        <view wx:for="{{blogImg}}" wx:key="index">
+          <image src="{{item.tempFilePath}}" bindtap="deleteImg" wx:if="{{item}}" data-index="{{index}}"></image>
+        </view>
+
+        <image src="../../img/点赞.png" bindtap="chooseImage"></image>
+      </view>
+      <button form-type="submit">发布</button>
+      <button form-type="reset">清空</button>
+      <view class="box"><text>头像:</text><input type="text" name="toxiang" value="{{userinfo.avatarUrl}}" /><button type="primary" size="mini" bindtap="getUser">授权</button></view>
+      <view class="box"><text>昵称:</text><input type="text" name="name" /></view>
+      <view class="box"><text>主题:</text><input type="text" name="title" /></view>
+      <view class="box_jj"><text>简介:</text><textarea name="brief" id="" cols="30" rows="10"  style="height: 200rpx;"></textarea></view>
+      <view class="form-group form-column">
+        <label class="form-label">内容</label>
+        <view class="toolbar" catchtouchend="format">
+          <i class="iconfont icon-format-header-2 {{formats.header === 2 ? 'ql-active' : ''}}" data-name="header" data-value="{{2}}"></i>
+          <i class="iconfont icon-format-header-3 {{formats.header === 3 ? 'ql-active' : ''}}" data-name="header" data-value="{{3}}"></i>
+          <i class="iconfont icon-zitijiacu {{formats.bold ? 'ql-active' : ''}}" data-name="bold"></i>
+          <i class="iconfont icon-zitixieti {{formats.italic ? 'ql-active' : ''}}" data-name="italic"></i>
+          <i class="iconfont icon-zitixiahuaxian {{formats.underline ? 'ql-active' : ''}}" data-name="underline"></i>
+          <i class="iconfont icon--checklist" data-name="list" data-value="check"></i>
+          <i class="iconfont icon-youxupailie {{formats.list === 'ordered' ? 'ql-active' : ''}}" data-name="list" data-value="ordered"></i>
+          <i class="iconfont icon-wuxupailie {{formats.list === 'bullet' ? 'ql-active' : ''}}" data-name="list" data-value="bullet"></i>
+        </view>
+        <editor id="contentEditor" bindready="onEditorReady" class="form-editor" name="content"></editor>
+      </view>
+    </form>
+    <text> {{brief}}</text>
+  </scroll-view>
+</view>

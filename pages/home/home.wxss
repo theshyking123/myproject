@@ -1,0 +1,45 @@
+/* pages/home/home.wxss */
+swiper image{
+  width: 100%;
+  
+}
+swiper{
+  height: 270rpx;
+}
+.box .box_image image{
+  width: 180rpx;height: 180rpx;
+  
+}
+.box{
+  height: 270rpx;
+  display: flex;
+  flex-direction: row;
+}
+.box_image{
+  flex: 1;
+  /* border: 2rpx solid rgb(0, 255, 179);
+  border-radius: 50%; */
+  text-align: center;
+  width: 180rpx;
+ 
+}
+text{
+  line-height: 30px;
+}
+.last_image image,text{
+  vertical-align: middle;
+}
+
+.boxhot{
+  display: flex;
+  flex-wrap: wrap;
+}
+.boxhot_contain{
+  width: 240rpx;
+  height: 250rpx;
+  border-bottom: 1px solid rgb(175, 192, 175);
+  border-radius: 20%;
+}
+.box_toxiang image,text{
+  vertical-align: middle;
+}

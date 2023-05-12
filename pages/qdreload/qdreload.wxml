@@ -1,0 +1,9 @@
+<view><label>清单条数：</label>{{num}}</view>
+<view style="border: 1px solid red;">提示：下拉删除全部记录</view>
+<button bindtap="query">按时间查询清单</button>
+<view wx:for="{{datalist}}" wx:key="index">
+    <view style="border: 1px solid red;height: 100rpx;">
+      <view data-id="{{item._id}}" bindtap="handTap" style="text-align: center;"><text style="line-height:100rpx ;">{{item.title}}</text>
+      </view>
+  </view>
+  </view>

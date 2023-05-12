@@ -1,0 +1,12 @@
+<!--pages/learnDetail/learnDetail.wxml-->
+<view class="title"><label>标题</label><text>{{datalist.title}}</text></view>
+<view style="padding: 10px;">
+  <rich-text nodes="{{datalist.content}}"></rich-text>
+</view>
+<view>
+  <image src="{{datalist.img}}" mode="widthFix"></image>
+</view>
+<view style="margin-bottom: 0px;position:absolute">
+  <image src="{{imgurl}}" style="width: 100rpx;height: 100rpx;" bindtap="handlezan" 	binderror="handleError" mode="aspectFit"></image>
+  <button size="mini" open-type="share" style="width: 70px;margin-left:200px;" bindtap="jifeng"><image src="../../img/share.png" style="width: 100rpx;height: 100rpx; " ></image></button>
+</view>

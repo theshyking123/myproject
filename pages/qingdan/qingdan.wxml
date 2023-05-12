@@ -1,0 +1,35 @@
+<view>
+  <scroll-view scroll-y="true" style="height: 1000px;">
+<button bindtap="up" type="default" size="mini" plain="true" style="width: 110px;">计划提醒</button>
+    <form bindsubmit="submit">
+      <button form-type="submit" type="default" size="mini" plain="true" style="width: 105px;" >保存</button>
+      <button type="primary" type="default" size="mini" plain="true" style="width: 100px;" bindtap="reset">清空</button>
+      <view class="box"><text>主题:</text><input type="text" name="title" value="{{zhuting}}" /></view>
+    </form>
+   
+    <view style="border:1px solid red">当前选择: {{date}}
+      <picker mode="date" value="{{date}}" start="2015-09-01" bindchange="bindDateChange">
+        <view class="picker">
+          选择日期
+        </view>
+      </picker>
+    </view>
+    <view style="border:1px solid red">当前选择: {{time}}
+      <picker mode="time" value="{{date}}" bindchange="bindTimeChange">
+        <view class="picker">
+          选择时间
+        </view>
+      </picker>
+    </view>
+    <form bindsubmit="inputadd">
+      <input type="text" name="item" placeholder="请输入清单信息" style="border: 2rpx solid red;height: 100rpx;" />
+      <button form-type="submit" type="primary">添加条目</button>
+    </form>
+   
+    <view wx:for="{{datalist}}" wx:key="index">
+      <view class="box">{{item}}</view>
+    </view>
+
+  </scroll-view>
+</view>
+<audio src="../../music/雨.mp3" action="{{action}}"></audio>

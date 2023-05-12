@@ -1,0 +1,13 @@
+<!--pages/search/search.wxml-->
+<view class="root">
+<input type="text" placeholder="请输入搜索内容" bindtap="loop"/>
+<view>搜素</view>
+</view>
+<view class="box" wx:for="{{datalist}}" wx:key="index">
+  <view bindtap="handleTap" data-id="{{item._id}}">
+    <view class="box_toxiang">
+      <image src="{{item.toxiang}}" binderror="handleError"></image><text>{{item.name}}</text>
+    </view>
+    <view class="box_briet" style="height: 60px;overflow: hidden;">简介：<text>{{item.brief}}</text></view>
+  </view>
+</view>

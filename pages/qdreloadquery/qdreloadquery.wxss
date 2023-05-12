@@ -1,0 +1,14 @@
+.box{
+  height: 10px;
+  display: flex;
+  
+}
+.box_header{
+  flex: 1;
+  text-align: center;
+  line-height: 10px;
+  border-left:1px solid red;
+}
+.active{
+  color: red;
+}

@@ -1,0 +1,2 @@
+先将三个json文件导入云数据库，不会导入的百度，再创建user、qingdang、jifeng、
+listreload、pay、studyreload表。

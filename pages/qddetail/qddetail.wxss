@@ -1,0 +1,5 @@
+/* pages/qddetail/qddetail.wxss */
+.box{
+  height: 100rpx;
+  border-bottom: 1rpx solid rgba(145, 203, 211, 0.568);
+}

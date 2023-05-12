@@ -1,0 +1,6 @@
+/* pages/setting/setting.wxss */
+input{
+  height: 100rpx;
+  border-radius: 5%;
+  border: 2rpx solid rgb(100, 95, 95);
+}

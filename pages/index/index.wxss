@@ -1,0 +1,11 @@
+.box{
+  height: 1180rpx;
+  background-image: url(https://pic.qqtn.com/up/2018-5/15270641877264921.jpg);
+ 
+  
+}
+input{
+  height: 100rpx;
+  border-radius: 5%;
+  border: 2rpx solid rgb(100, 95, 95);
+}

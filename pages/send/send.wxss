@@ -1,0 +1,37 @@
+/* pages/send/send.wxss */
+@import "./assets/iconfont.wxss";
+
+input{
+height: 100rpx;
+
+}
+.box{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid rgba(145, 203, 211, 0.568);
+}
+.box text{
+  line-height: 43px;
+  
+}
+.box_jj{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2rpx solid rgba(145, 203, 211, 0.568);
+  height: 200rpx;
+}
+.box_jj text{
+  line-height:85px ;
+  width: 40px;
+}
+.box_text{
+  height: 300rpx;
+  border-bottom: 2rpx solid rgba(145, 203, 211, 0.568);
+}
+image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.box_img text,image{
+  vertical-align: middle;
+}

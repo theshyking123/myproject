@@ -1,0 +1,5 @@
+<view class="box"><label>用户名：</label>{{person.username}}</view>
+<view class="box"><label>手机号：</label>{{person.tel}}</view>
+<view class="box"><label>积分：</label>{{person.jifeng}}</view>
+<view class="box"><label>金币：</label>{{person.flow}}</view>
+<view class="box"><label>账号类型：</label>{{account}}</view>
